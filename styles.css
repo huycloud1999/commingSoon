@@ -1,0 +1,68 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/SVN-LaguSans-SemiBold.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 1vw;
+}
+.container-CommingSoon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.bgCommmingSoon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.mainComming {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mainComming img {
+  width: 21rem;
+}
+.mainComming h1 {
+  width: 63%;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 0.94rem;
+  text-transform: uppercase;
+  font-family: myFirstFont;
+  font-weight: 700;
+}
+@media (max-width: 1025px) {
+  .mainComming h1 {
+    width: 90%;
+    font-size: 5rem;
+  }
+  .mainComming img {
+    width: 45rem;
+  }
+}
+@media (max-width: 769px) {
+  html {
+    font-size: 4.267vw;
+  }
+  .mainComming img {
+    width: 15rem;
+  }
+  .mainComming h1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
