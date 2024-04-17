@@ -10,11 +10,15 @@
 html {
   font-size: 1vw;
 }
+body{
+  overflow: hidden;
+}
 .container-CommingSoon {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
 }
